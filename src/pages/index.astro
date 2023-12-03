@@ -1,29 +1,83 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 import Navbar from "../components/Navbar.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-
-	<div class="">
+<Layout title="Bienvenidos a Tuna Barcelona">
+	<div class="mw-9xl m-auto flex flex-col">
 		<Navbar />
 		<!-- <Header /> -->
-		<main>
-			<div class="text-center">
-				<h1 class="font-bold text-4xl mb-14">Tuna de Ciències de Barcelona</h1>
-			</div>
-			<div class="hidden md:block">
-				<img src="../../public/assets/img/certamen_sevilla.webp" alt="certamen sevilla">
-				
-			</div>
-			
+		<main class="mw-9xl m-auto flex-1">
 
+			<div class="text-center">
+				<h1 class="font-bold text-4xl mb-14">
+					Tuna de Ciencias de Barcelona
+				</h1>
+			</div>
+
+			<div class="flex flex-col md:flex-row w-full">
+				<img
+					src="/assets/img/index/antequera_post.jpg"
+					alt="antequera_post"
+					class="w-full md:w-1/2 object-cover"
+				/>
+
+				<img
+					src="/assets/img/index/banner.jpg"
+					alt="banner"
+					class="w-full md:w-1/2 object-cover "
+				/>
+			</div>
+
+			<div class="flex flex-wrap justify-between m-auto w-7xl">
+				<div class="w-1/4 flex flex-col">
+				  <div class="bg-white rounded-md p-4 mb-4">
+					<span class="text-3xl text-indigo-600 mb-4"></span>
+					<h3 class="text-lg font-bold">Mantener la Tradición</h3>
+				  </div>
+				</div>
+				<div class="w-1/4 flex flex-col">
+				  <div class="bg-white rounded-md p-4 mb-4">
+					<span class="text-3xl text-indigo-600 mb-4"></span>
+					<h3 class="text-lg font-bold">Fomentar el Folclore</h3>
+				  </div>
+				</div>
+				<div class="w-1/4 flex flex-col">
+				  <div class="bg-white rounded-md p-4 mb-4">
+					<span class="text-3xl text-indigo-600 mb-4"></span>
+					<h3 class="text-lg font-bold">Practicar la Solidaridad</h3>
+				  </div>
+				</div>
+				<div class="w-1/4 flex flex-col">
+				  <div class="bg-white rounded-md p-4 mb-4">
+					<span class="text-3xl text-indigo-600 mb-4"></span>
+					<h3 class="text-lg font-bold">Disfrutar de la Vida</h3>
+				  </div>
+				</div>
+			  </div>
+
+
+			<div class="container max-w-7xl mx-auto px-4 pt-16 pb-24">
+				<div class="flex flex-col items-center">
+				  <h2 class="text-3xl font-bold text-center mb-4">¡Forma parte de la Tuna de Barcelona!</h2>
+				</div>
+				<div class="flex flex-col md:flex-row flex-wrap justify-between">
+				  <div class="pr-4 md:w-1/2 flex flex-col justify-between">
+					<p class="text-base leading-loose w-full">Si te gusta la música, viajar, conocer mundo, correr aventuras, conocer gente nueva… ¡Este es tu sitio! <strong class="font-bold">Únete a la Tuna de Barcelona y descubre todo lo que la Tuna te puede aportar.</strong> ¡No lo pienses más!</p>
+					<a href="/contacto" class="inline-block bg-indigo-600 text-white font-bold py-2 px-4 rounded-md mt-4 mb-4 self-end">¡Quiero apuntarme!</a>
+					
+				  </div>
+				  <div class="md:w-1/2">
+					<img src="https://www.laregion.es/asset/thumbnail,1280,720,center,center/media/laregion/images/2023/05/12/2023051217033111829.jpg" alt="" class="w-full h-full object-cover rounded-md">
+				  </div>
+				</div>
+			  </div>
 		</main>
-		<Footer />
 	</div>
+	<Footer />
 </Layout>
 
 <style></style>
