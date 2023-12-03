@@ -1,9 +1,43 @@
 ---
 
 import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
 
 ---
-
-<Navbar />
-
-Quienes somos
+<Layout title="Quienes somos">
+    <Navbar />
+    <div class="container max-w-7xl mx-auto px-4 pt-16 pb-24">
+        <div class="flex flex-col items-center">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                ¡Forma parte de la Tuna de Barcelona!
+            </h2>
+        </div>
+        <div
+            class="flex flex-col md:flex-row flex-wrap justify-between"
+        >
+            <div class="pr-4 md:w-1/2 flex flex-col justify-between">
+                <p class="text-xl leading-loose w-full">
+                    Si te gusta la música, viajar, conocer mundo, correr
+                    aventuras, conocer gente nueva… ¡Este es tu sitio! <strong
+                        class="font-bold"
+                        >Únete a la Tuna de Barcelona y descubre todo lo
+                        que la Tuna te puede aportar.</strong
+                    > ¡No lo pienses más!
+                </p>
+                <a
+                    href="/contacto"
+                    class="inline-block bg-[#251379] text-white font-bold py-2 px-4 rounded-md mt-4 mb-4 self-end"
+                    >Quiero apuntarme</a
+                >
+            </div>
+            <div class="md:w-1/2">
+                <img
+                    src="/assets/img/index/italia.jpg"
+                    alt="Compañeras"
+                    class="w-full h-full object-cover rounded-md"
+                    title="Italia, Roma "
+                />
+            </div>
+        </div>
+    </div>    
+</Layout>

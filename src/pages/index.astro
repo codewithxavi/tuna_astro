@@ -7,11 +7,10 @@ import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Bienvenidos a Tuna Barcelona">
-	<div class="mw-9xl m-auto flex flex-col">
+	<div class="flex flex-col">
 		<Navbar />
 		<!-- <Header /> -->
-		<main class="mw-9xl m-auto flex-1">
-
+		<main class="flex-1">
 			<div class="text-center">
 				<h1 class="font-bold text-4xl mb-14">
 					Tuna de Ciencias de Barcelona
@@ -20,61 +19,109 @@ import Navbar from "../components/Navbar.astro";
 
 			<div class="flex flex-col md:flex-row w-full">
 				<img
-					src="/assets/img/index/antequera_post.jpg"
-					alt="antequera_post"
-					class="w-full md:w-1/2 object-cover"
-				/>
-
-				<img
-					src="/assets/img/index/banner.jpg"
+					src="/assets/img/index/portocovo.jpg"
 					alt="banner"
-					class="w-full md:w-1/2 object-cover "
+					class="w-full object-cover"
+					title="portocovo"
 				/>
 			</div>
 
-			<div class="flex flex-wrap justify-between m-auto w-7xl">
-				<div class="w-1/4 flex flex-col">
-				  <div class="bg-white rounded-md p-4 mb-4">
-					<span class="text-3xl text-indigo-600 mb-4"></span>
-					<h3 class="text-lg font-bold">Mantener la Tradición</h3>
-				  </div>
-				</div>
-				<div class="w-1/4 flex flex-col">
-				  <div class="bg-white rounded-md p-4 mb-4">
-					<span class="text-3xl text-indigo-600 mb-4"></span>
-					<h3 class="text-lg font-bold">Fomentar el Folclore</h3>
-				  </div>
-				</div>
-				<div class="w-1/4 flex flex-col">
-				  <div class="bg-white rounded-md p-4 mb-4">
-					<span class="text-3xl text-indigo-600 mb-4"></span>
-					<h3 class="text-lg font-bold">Practicar la Solidaridad</h3>
-				  </div>
-				</div>
-				<div class="w-1/4 flex flex-col">
-				  <div class="bg-white rounded-md p-4 mb-4">
-					<span class="text-3xl text-indigo-600 mb-4"></span>
-					<h3 class="text-lg font-bold">Disfrutar de la Vida</h3>
-				  </div>
-				</div>
-			  </div>
+			<!-- Nuestros valores -->
+			<div
+				class="flex flex-col flex-wrap justify-between m-auto max-w-7xl"
+			>
+				<h2 class="text-center w-full text-3xl pt-10 font-bold mb-3">
+					Nuestros valores
+				</h2>
+				<div class="w-full flex flex-col mb-10">
+					<div class="bg-white rounded-md p-4 mb-4 flex flex-col md:flex-row w-full gap-5">
+						<img
+							src="/assets/img/index/becas.jpg"
+							title="becas"
+							alt="banner"
+							class="w-full md:w-1/2 object-cover rounded-md order-1 md:order-1"
+						/>
 
+						<div class="flex flex-col text-center gap-8 md:text-2xl order-2 md:order-2">
+							<h3 class="font-bold w-full text-2xl ">
+								Quienes Somos
+							</h3>
+	
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nesciunt repudiandae. Molestiae nemo dolor fugit in nostrum quae, non asperiores possimus modi esse, nesciunt, nulla provident. Dolorem nobis architecto fugiat.</p>
 
-			<div class="container max-w-7xl mx-auto px-4 pt-16 pb-24">
-				<div class="flex flex-col items-center">
-				  <h2 class="text-3xl font-bold text-center mb-4">¡Forma parte de la Tuna de Barcelona!</h2>
+							<a href="/quienes-somos" class="bg-[#251379] text-white px-4 py-2 rounded-lg w-1/3 flex justify-center text-center mx-auto items-center">Quienes Somos</a>
+						</div>
+					</div>
 				</div>
-				<div class="flex flex-col md:flex-row flex-wrap justify-between">
-				  <div class="pr-4 md:w-1/2 flex flex-col justify-between">
-					<p class="text-base leading-loose w-full">Si te gusta la música, viajar, conocer mundo, correr aventuras, conocer gente nueva… ¡Este es tu sitio! <strong class="font-bold">Únete a la Tuna de Barcelona y descubre todo lo que la Tuna te puede aportar.</strong> ¡No lo pienses más!</p>
-					<a href="/contacto" class="inline-block bg-indigo-600 text-white font-bold py-2 px-4 rounded-md mt-4 mb-4 self-end">¡Quiero apuntarme!</a>
-					
-				  </div>
-				  <div class="md:w-1/2">
-					<img src="https://www.laregion.es/asset/thumbnail,1280,720,center,center/media/laregion/images/2023/05/12/2023051217033111829.jpg" alt="" class="w-full h-full object-cover rounded-md">
-				  </div>
+				<div class="w-full flex flex-col mb-10">
+					<div class="bg-white rounded-md p-4 mb-4 flex flex-col md:flex-row w-full gap-5">
+						<div class="flex flex-col text-center gap-8 md:text-2xl order-2">
+							<h3 class="font-bold w-full text-2xl  ">
+								Historia
+							</h3>
+	
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nesciunt repudiandae. Molestiae nemo dolor fugit in nostrum quae, non asperiores possimus modi esse, nesciunt, nulla provident. Dolorem nobis architecto fugiat.</p>
+
+							<a href="/historia" class="bg-[#251379] text-white px-4 py-2 rounded-lg w-1/3 flex justify-center text-center mx-auto">Historia</a>
+						</div>
+						<img
+							src="/assets/img/index/becas.jpg"
+							title="becas"
+							alt="banner"
+							class="w-full md:w-1/2 object-cover rounded-md order-1 md:order-2"
+						/>
+					</div>
 				</div>
-			  </div>
+				<div class="w-full flex flex-col mb-10">
+					<div class="bg-white rounded-md p-4 mb-4 flex flex-col md:flex-row w-full gap-5">
+						<img
+							src="/assets/img/index/becas.jpg"
+							title="becas"
+							alt="banner"
+							class="w-full md:w-1/2 object-cover rounded-md"
+						/>
+
+						<div class="flex flex-col text-center gap-8 md:text-2xl">
+							<h3 class="font-bold w-full text-2xl ">
+								Noticias
+							</h3>
+	
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nesciunt repudiandae. Molestiae nemo dolor fugit in nostrum quae, non asperiores possimus modi esse, nesciunt, nulla provident. Dolorem nobis architecto fugiat.</p>
+
+							<a href="/noticias" class="bg-[#251379] text-white px-4 py-2 rounded-lg w-1/3 flex justify-center text-center mx-auto">Noticias</a>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full flex flex-col mb-10">
+					<div class="bg-white rounded-md p-4 mb-4 flex flex-col md:flex-row w-full gap-5">
+						
+
+						<div class="flex flex-col text-center gap-8 md:text-2xl order-2">
+							<h3 class="font-bold w-full text-2xl ">
+								Contacto
+							</h3>
+	
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nesciunt repudiandae. Molestiae nemo dolor fugit in nostrum quae, non asperiores possimus modi esse, nesciunt, nulla provident. Dolorem nobis architecto fugiat.</p>
+
+							<a href="/contacto" class="bg-[#251379] text-white px-4 py-2 rounded-lg w-1/3 flex justify-center text-center mx-auto">Contacto</a>
+
+						
+							
+						</div>
+
+						<img
+							src="/assets/img/index/becas.jpg"
+							title="becas"
+							alt="banner"
+							class="w-full md:w-1/2 object-cover rounded-md order-1 md:order-2"
+						/>
+					</div>
+				</div>
+			</div>
+
+			
 		</main>
 	</div>
 	<Footer />
